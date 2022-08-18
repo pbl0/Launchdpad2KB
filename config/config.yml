@@ -1,0 +1,36 @@
+# Read assets/cells.png for reference
+- cell: 112
+  keys:
+  - 'ctrl'
+  - 'shift'
+  - 'e'
+  color: 120
+- cell: 113
+  keys:
+  - 'ctrl'
+  - 'shift'
+  - 'f'
+  color: 120
+- cell: 114
+  keys:
+  - 'ctrl'
+  - 'shift'
+  - 'g'
+  color: 120
+- cell: 115
+  keys:
+  - 'ctrl'
+  - 'shift'
+  - 'x'
+  color: 120
+- cell: 120
+  keys:
+  - 'ctrl'
+  - ','
+  color: 70
+- cell: 118
+  keys:
+  - 'ctrl'
+  - 'shift'
+  - 'i'
+  color: 60
