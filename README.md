@@ -10,16 +10,16 @@ A linux CLI tool to map keyboard hotkeys with the Novation Launchpad device.
 python src/main.py
 ```
 
-This will ask for the MIDI port, and will default the config file to `src/config.yml`. You can also pass the port number and the config file, as follows:
+This will ask for the MIDI port, and will default the config file to `config/config.yml`. You can also pass the port number and the config file, as follows:
 
 ```
-python src/main.py --port=1 --config=src/config.yml
+python src/main.py --port=1 --config=config/config.yml
 ```
 
 Or
 
 ```
-python src/main.py -p 1 -c src/config.yml
+python src/main.py -p 1 -c config/config.yml
 ```
 
 For some reason sometimes it won't start detecting the device presses. When this happens pressing the `mixer` button on the top-right is enough for it to start working.
