@@ -8,7 +8,6 @@ from pyautogui import hotkey, keyDown, keyUp, press
 from yaml import safe_load, YAMLError
 
 
-
 class MidiInputHandler(object):
     def __init__(self, port):
         self.port = port
@@ -88,22 +87,23 @@ def get_cell(number):
 
 def read_argv():
     argvs = argv[1:]
-    opts, args = getopt(argvs,'p:c:', ['port=', 'config='])
+    opts, args = getopt(argvs, "p:c:", ["port=", "config="])
     port = None
-    config_path = 'config/config.yml'
+    config_path = "config/config.yml"
     for o, value in opts:
-        if o in ['-p', '--port']:
+        if o in ["-p", "--port"]:
             port = int(value)
-        elif o in ['-c', '--config']:
+        elif o in ["-c", "--config"]:
             config_path = value
-    return {'p': port, 'c': config_path}
+    return {"p": port, "c": config_path}
+
 
 if __name__ == "__main__":
 
     # Read CLI arguments
     args = read_argv()
-    port = args['p']
-    config_path = args['c']
+    port = args["p"]
+    config_path = args["c"]
 
     # Prompts user for MIDI input port, unless a valid port number or name
     # is given as the first argument on the command line.

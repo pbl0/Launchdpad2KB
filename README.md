@@ -6,23 +6,23 @@ A linux CLI tool to map keyboard hotkeys with the Novation Launchpad device.
 
 ### Usage
 
-Download from latest release
+Download and unzip from [latest release](https://github.com/pbl0/Launchdpad2KB/releases/latest)
 
 
 ```
-python src/main.py
+python ./launchpad2KB
 ```
 
 This will ask for the MIDI port, and will default the config file to `config/config.yml`. You can also pass the port number and the config file, as follows:
 
 ```
-python src/main.py --port=1 --config=config/config.yml
+python ./launchpad2KB --port=1 --config=config/config.yml
 ```
 
 Or
 
 ```
-python src/main.py -p 1 -c config/config.yml
+python ./launchpad2KB -p 1 -c config/config.yml
 ```
 
 For some reason sometimes it won't start detecting the device presses. When this happens pressing the `mixer` button on the top-right is enough for it to start working.
@@ -30,7 +30,7 @@ For some reason sometimes it won't start detecting the device presses. When this
 ### Configuration
 
 The configuration file must be a `.yaml` or `.yml` format.
-There is an example config file at `config/config.yml`
+There is an example config file at `config/config.yml`.
 For each cell you will require to set it as follows:
 
 Example:
@@ -97,7 +97,7 @@ sudo apt-get install python3-tk
 sudo dnf install python3-tkinter
 ```
 
-Then run as shown [previously](#usage).
+Then run as shown [previously](#usage) replacing `./launchpad2KB` with `src/main.py`.
 
 Haven't tested in Windows/MacOS.
 
