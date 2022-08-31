@@ -6,6 +6,9 @@ A linux CLI tool to map keyboard hotkeys with the Novation Launchpad device.
 
 ### Usage
 
+Download from latest release
+
+
 ```
 python src/main.py
 ```
