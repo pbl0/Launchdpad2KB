@@ -67,7 +67,7 @@ Example of multiple cells:
   - 'shift'
   - 'f'
   color: 80
-- cell: 113
+- cell: 114
   keys:
   - 'f'
   color: 60
@@ -99,7 +99,7 @@ sudo dnf install python3-tkinter
 
 Then run as shown [previously](#usage) replacing `./launchpad2KB` with `python src/main.py`.
 
-Haven't tested in Windows/MacOS.
+Haven't tested on Windows/MacOS.
 
 * * *
 
